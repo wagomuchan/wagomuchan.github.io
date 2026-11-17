@@ -3,35 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>かみ</title>
+<title>wagomuchan のホームページ</title>
+<style>
+  body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "MS PGothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 16px;
+    line-height: 1.6;
+  }
+  h1 { text-align: center; font-size: 28px; margin-bottom: 4px; }
+  .sub { text-align: center; font-size: 13px; margin-top: 0; }
+  h2 {
+    font-size: 18px;
+    background-color: #e0e0ff;
+    border-left: 6px solid #3333aa;
+    padding: 2px 8px;
+    margin-top: 32px;
+  }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #808080; padding: 6px 8px; vertical-align: top; font-size: 14px; }
+  th { background-color: #f0f0f0; text-align: left; white-space: nowrap; }
+  a { color: #0000ee; }
+  a:visited { color: #551a8b; }
+  .wip { color: #cc0000; font-size: 12px; }
+  .footer { text-align: center; font-size: 12px; margin-top: 40px; }
+</style>
 </head>
 <body>
-<h1>公開できました</h1>
-<p>フェーズ1完了。ここから中身を作っていきます。</p>
+
+<h1>wagomuchan のホームページ</h1>
+<p class="sub">ようこそ。右下の吹き出しから、わたしについて質問できます。</p>
+
+<hr>
+
+<h2>プロフィール</h2>
+<table>
+  <tr><th>名前</th><td>wagomuchan（わごむちゃん）</td></tr>
+  <tr><th>所属</th><td>中央大学 理工学部 情報工学科（2028年3月卒業予定）</td></tr>
+  <tr><th>使える言語</th><td>C++ / Python / Java / TypeScript</td></tr>
+  <tr><th>興味のある分野</th><td>AI</td></tr>
+  <tr><th>好きなもの</th><td>コーヒー（モカ）、あてもないドライブ、バイブコーディング</td></tr>
+</table>
+
+<h2>作ったもの</h2>
+<table>
+  <tr>
+    <th><a href="https://pypi.org/project/symbuna/">symbuna</a></th>
+    <td>高校数学IIIの範囲に特化した数式処理ライブラリ。C++17 のエンジンを pybind11 で Python から呼び出せます。PyPI で公開中（<code>pip install symbuna</code>）。<br>
+    <a href="https://github.com/wagomuchan/symbuna">GitHub</a></td>
+  </tr>
+  <tr>
+    <th>3D空間システム</th>
+    <td>4人チームで開発。標高データから3D空間を作るシステム（C++ / Python）。チームへの Git 導入を主導しました。</td>
+  </tr>
+  <tr>
+    <th><a href="https://github.com/wagomuchan/address_search">address_search</a></th>
+    <td>Python 製のスクリプト。入力された文字列から正規表現で郵便番号を取り出し、郵便番号検索API（zipcloud）と通信して住所を返します。</td>
+  </tr>
+  <tr>
+    <th><a href="https://github.com/wagomuchan/daily-point-app">daily-point-app</a></th>
+    <td>TypeScript 製。デイリーポイントを貯めるだけのアプリ。</td>
+  </tr>
+  <tr>
+    <th><a href="https://wagomuchan.github.io/pomodoro-timer/">ポモドーロタイマー</a></th>
+    <td>25分の作業と5分の休憩を繰り返す Web アプリ（HTML / CSS / JavaScript）。スクラムとチーム開発の Git/GitHub 運用を練習するためのプロジェクトで、わたしがスクラムマスター兼プロダクトオーナーとして Issue・ブランチ・プルリクエストの流れを回し、Claude Code を開発メンバーにして進めています。<br>
+    <a href="https://github.com/wagomuchan/pomodoro-timer">GitHub</a> <span class="wip">［開発中］</span></td>
+  </tr>
+</table>
+
+<h2>リンク</h2>
+<ul>
+  <li><a href="https://github.com/wagomuchan">GitHub</a></li>
+  <li><a href="https://pypi.org/project/symbuna/">PyPI（symbuna）</a></li>
+  <li><a href="https://note.com/fragrant_flower">note</a></li>
+</ul>
+
+<p><b>バイブコーディングで作ったサイト</b></p>
+<ul>
+  <li><a href="https://wagomuchan.github.io/drive_coding1_claude/">ドライブコーディングできるかな</a>　…　ドライブ中に音声で設計した機能を、1回のドライブにつき1つずつ足していくサイト。第1回は「ドライブの思い出マップ」</li>
+  <li><a href="https://wagomuchan.github.io/pomodoro-timer/">ポモドーロタイマー</a>　…　25分作業・5分休憩のタイマー</li>
+  <li><a href="https://wagomuchan.github.io/ossann_mede_claude/">おっさんを愛でるだけ</a>　…　おっさんの一人暮らしの部屋をただ眺める3D箱庭。現実の30倍の速さで時間が進み、3Dモデルも音もすべてコードで生成 <span class="wip">［開発中］</span></li>
+  <li><a href="https://wagomuchan.github.io/mieru2_claude/">見える2</a>　…　妖怪が見えることを隠して生きる女の子たちのブラウザRPG。ドット絵も音楽もプログラムで作っています。iPhone の縦持ちで遊ぶ想定 <span class="wip">［開発中］</span></li>
+  <li><a href="https://wagomuchan.github.io/kinomi_claude/">木の実をあげよう</a>　…　森のどうぶつに、ほしがっている木の実を指で運んであげるスマホ向けブラウザゲーム。クレヨン風の絵と効果音もコードで生成</li>
+</ul>
+
+<hr>
+<p class="footer">最終更新日：2026年11月17日</p>
 
 <script>
  window.difyChatbotConfig = {
-  token: 'NknXmoI6QxSl9iYD',
+  token: 'HFwDTBqFSyugxiGL',
   baseUrl: 'https://udify.app',
   inputs: {
-    // You can define the inputs from the Start node here
-    // key is the variable name
-    // e.g.
-    // name: "NAME"
   },
   systemVariables: {
-    // user_id: 'YOU CAN DEFINE USER ID HERE',
-    // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
   },
   userVariables: {
-    // avatar_url: 'YOU CAN DEFINE USER AVATAR URL HERE',
-    // name: 'YOU CAN DEFINE USER NAME HERE',
   },
  }
 </script>
 <script
  src="https://udify.app/embed.min.js"
- id="NknXmoI6QxSl9iYD"
+ id="HFwDTBqFSyugxiGL"
  defer>
 </script>
 <style>
@@ -43,6 +119,6 @@
     height: 40rem !important;
   }
 </style>
-  
+
 </body>
 </html>
